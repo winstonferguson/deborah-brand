@@ -1,0 +1,6 @@
+.footer h2.footer-block__heading {
+  font-family: var(--font-body-family);
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0.75;
+}

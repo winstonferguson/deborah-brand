@@ -1,3 +1,11 @@
+<div class="collection-hero collection-hero__title">
+  <a href="{{ product.type | url_for_type }}">{{ product.type }}</a>
+</div>
+
+<script>
+  console.log( {{ product  | json }} );
+</script>
+
 <section
   id="MainProduct-{{ section.id }}"
   class="page-width section-{{ section.id }}-padding"
@@ -630,7 +638,12 @@
                       >
                         <span>
                           {%- if product.selected_or_first_available_variant.available -%}
-                            {{ 'products.product.add_to_cart' | t }}
+                            {% if product.type contains "Bespoke" %}
+                              <span>Enquire</span>
+                            {% else %}
+                              {{ 'products.product.add_to_cart' | t }}
+                            {% endif %}
+                            
                           {%- else -%}
                             {{ 'products.product.sold_out' | t }}
                           {%- endif -%}
