@@ -6,9 +6,11 @@ Shopify theme for Deborah Brand.
 
 Used Dawn as a starting point for theme development. 
 
-## Conventions
+## Customizations
 
 ### Assets
+
+Naming: custom asset files are prepended with "db-" and named according to theme convention. For example: "db-base.css, db-section-name.css, db-section-name.js".
 
 #### CSS
 
@@ -16,5 +18,4 @@ Used Dawn as a starting point for theme development.
 
 ### Sections
 
-## Customizations
 
