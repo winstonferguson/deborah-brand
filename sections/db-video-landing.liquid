@@ -1,0 +1,88 @@
+{{ 'db-video-landing.css' | asset_url | stylesheet_tag }}
+
+{% liquid 
+  for source in section.settings.db_landing_video.sources 
+    if source.mime_type contains "mp4" and source.width >= 1920
+      assign video_source = source
+      assign video_poster = section.settings.landing_video.preview_image.src
+      assign video_heading = section.blocks.first.settings.heading
+      break
+    endif
+  endfor
+%}
+
+<script>
+    console.log( {{ section.settings  | json }} );
+</script>
+
+{%- style -%}
+ .db-landing-video__heading.db-animate {
+    animation-duration: {{ section.settings.db_landing_video.duration | add: 1000 }}ms;
+  }
+{%- endstyle -%}
+
+{%- if video_source.url != blank and video_source.mime_type != blank -%}
+  <div id="db-video-landing-{{ section.id }}" class="db-landing-video__container">
+    <video class="db-landing-video__video" autoplay muted playsinline poster="{{ video_poster }}">>
+      <source src="{{ video_source.url }}" type="{{ video_source.mime_type }}">
+      Your browser does not support the video tag.
+    </video>
+    {%- if video_heading.size >= 1 -%}
+      <h2 class="db-landing-video__heading{% if section.settings.db_landing_animate  %} db-animate{% endif %}{% if section.settings.db_landing_heading_inverse %} db-inverse{% endif %}">{{ video_heading }}</h2>
+    {%- endif -%}
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "DB Landing Video",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 1,
+  "settings": [
+    {
+      "type": "video",
+      "id": "db_landing_video",
+      "label": "Video"
+    },
+    {
+      "type": "image_picker",
+      "id": "db_landing_placeholder",
+      "label": "Placeholder"
+    },
+    {
+      "type": "checkbox",
+      "id": "db_landing_animate",
+      "default": true,
+      "label": "Animate heading on load"
+    },
+    {
+      "type": "checkbox",
+      "id": "db_landing_heading_inverse",
+      "default": false,
+      "label": "Invert heading color"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "The UK's Premiere Corsetiere",
+          "label": "Heading"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "DB Landing Video"
+    }
+  ],
+  "templates": ["index"]
+}
+{% endschema %}

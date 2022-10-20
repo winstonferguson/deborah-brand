@@ -1,0 +1,87 @@
+{{ 'db-image-with-text.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'db-image-with-text.js' | asset_url }}" defer="defer"></script>
+
+
+<div id="db-image-with-text--{{ section.id }}" class="db-image-with-text db-image-with-text__container">
+  <div class="db-image-with-text__image">
+    {%- if section.settings.db_image_with_text_image != blank -%}
+      {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2){%- endcapture -%}
+      {{ section.settings.db_image_with_text_image | image_url: width: 1500 | image_tag:
+        loading: 'lazy',
+        sizes: sizes,
+        widths: '165, 360, 535, 750, 1070, 1500'
+      }}
+    {%- else -%}
+      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- endif -%}
+  </div>
+  <div class="db-image-with-text__content">
+    {%- for block in section.blocks -%}
+      {% case block.type %}
+        {%- when 'heading' -%}
+          <h2 class="db-image-with-text__heading">
+            {{ block.settings.heading | escape }}
+          </h2>
+        {%- when 'text' -%}
+          <div class="db-image-with-text__text">{{ block.settings.text }}</div>
+        {% endcase %}    
+    {%- endfor -%}
+    <a href="#" class="button db-image-with-text__button">Next</a>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "DB Image with Text",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "db_image_with_text_image",
+      "label": "Image"
+    } 
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Image with text",
+          "label": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "label": "text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "DB Image with Text",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

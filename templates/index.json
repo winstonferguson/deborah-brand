@@ -1,0 +1,27 @@
+{
+  "sections": {
+    "d6f899b3-fd7e-4e7b-8d94-c8c90fcdff41": {
+      "type": "db-video-landing",
+      "blocks": {
+        "7d02eae2-5394-465d-a287-afb004c012e9": {
+          "type": "heading",
+          "settings": {
+            "heading": "The UK's Premiere Corsetiere"
+          }
+        }
+      },
+      "block_order": [
+        "7d02eae2-5394-465d-a287-afb004c012e9"
+      ],
+      "settings": {
+        "db_landing_video": "shopify:\/\/files\/videos\/test-landing.mp4",
+        "db_landing_placeholder": "shopify:\/\/shop_images\/test-landing-placeholder.jpg",
+        "db_landing_animate": true,
+        "db_landing_heading_inverse": false
+      }
+    }
+  },
+  "order": [
+    "d6f899b3-fd7e-4e7b-8d94-c8c90fcdff41"
+  ]
+}
