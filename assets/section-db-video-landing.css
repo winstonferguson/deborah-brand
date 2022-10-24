@@ -31,15 +31,11 @@
   width: 80%;
 }
 
-.db-landing-video__heading.db-animate {
-  visibility: hidden;
-}
-
-.db-landing-video__heading.db-animate.playing {
+/* .db-landing-video__heading.db-animate.playing {
   animation-name: db-fade-in;
   animation-timing-function: ease-in;
   visibility: visible;
-}
+} */
 
 .db-landing-video__heading.db-inverse {
   color: #000;
