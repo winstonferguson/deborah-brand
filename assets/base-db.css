@@ -23,16 +23,16 @@
   padding-bottom: 5rem;
 }
 
-#shopify-section-template--15698579488951__main {
+.page-intro {
   background-color: #fafafa;
 }
 
-.section-template--15698579488951__main-padding { 
+.page-intro { 
   padding: 60px !important;
   text-align: center;
 }
 
-.section-template--15698579488951__main-padding h1 {
+.page-intro h1 {
   margin: 0;
 }
 
@@ -128,13 +128,13 @@ h2 {
 }
 
 
-.section-template--15698579554487__main-padding * {
+.page-intro * {
   margin: 0 auto;
   max-width: 72.6rem;
   text-align: center;
 }
 
-.section-template--15698579554487__main-padding {
+.page-intro{
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
@@ -144,17 +144,8 @@ h2 {
   padding-bottom: 60px !important;
 }
 
-.section-template--15698579554487__main-padding p {
-  display: none;
-}
-
-.section-template--15698579554487__main-padding p:nth-of-type(2) {
-  display: block;
-}
-
-.section-template--15698579554487__main-padding h1 {
+.page-intro h1 {
   margin: 0 auto;
-
 }
 
 .color-inverse .button {
@@ -199,6 +190,7 @@ h2 {
 
 .facets-container { 
   border-bottom:  rgba(var(--color-base-text), 0.3) solid 1px;
+  padding-top: var(--grid-desktop-vertical-spacing) !important;
 }
 
 .facet-filters {
@@ -249,8 +241,4 @@ h2 {
   .product__media-wrapper {
     max-width: 50% !important;
   }
-}
-
-.rte {
-  display: none;
 }

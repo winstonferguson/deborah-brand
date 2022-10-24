@@ -163,8 +163,9 @@
       "main-password-header": {
         "type": "main-password-header",
         "settings": {
-          "logo_max_width": 100,
-          "color_scheme": "background-1"
+          "logo": "shopify:\/\/shop_images\/dbLogoWhite.png",
+          "logo_max_width": 200,
+          "color_scheme": "inverse"
         }
       },
       "main-password-footer": {
