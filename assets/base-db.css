@@ -23,6 +23,19 @@
   padding-bottom: 5rem;
 }
 
+.page-intro {
+  background-color: #fafafa;
+}
+
+.page-intro { 
+  padding: 60px !important;
+  text-align: center;
+}
+
+.page-intro h1 {
+  margin: 0;
+}
+
 
 h1,
 h2,
@@ -125,6 +138,7 @@ h2 {
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
+  gap: 50px;
   min-width: 100%;
   padding-top: 50px !important;
   padding-bottom: 60px !important;
@@ -227,4 +241,8 @@ h2 {
   .product__media-wrapper {
     max-width: 50% !important;
   }
+}
+
+.rte {
+  display: none;
 }
