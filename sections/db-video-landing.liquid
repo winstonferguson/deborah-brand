@@ -14,7 +14,6 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.db-landing-video__heading').classList.add('playing');
-
   });
   
   
@@ -22,7 +21,7 @@
 
 {%- style -%}
  .db-landing-video__heading.db-animate {
-    animation-duration: {{ section.settings.db_landing_video.duration | add: 1000 }}ms;
+    animation-duration: {{ section.settings.db_landing_video.duration }}ms;
   }
 {%- endstyle -%}
 
