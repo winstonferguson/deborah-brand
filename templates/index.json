@@ -15,7 +15,6 @@
       ],
       "settings": {
         "db_landing_video": "shopify:\/\/files\/videos\/DEBORAH CORSETS-DAY 1 15_-DAY 1 15_ 2.00_00_52_04.Still002_1.mp4",
-        "db_landing_placeholder": "shopify:\/\/shop_images\/test-landing-placeholder.jpg",
         "db_landing_animate": true,
         "db_landing_heading_inverse": false
       }
