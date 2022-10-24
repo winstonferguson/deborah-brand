@@ -12,7 +12,12 @@
 %}
 
 <script>
-    console.log( {{ section.settings  | json }} );
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.db-landing-video__heading').classList.add('playing');
+
+  });
+  
+  
 </script>
 
 {%- style -%}
