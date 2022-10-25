@@ -4,31 +4,19 @@
   for source in section.settings.db_landing_video.sources 
     if source.mime_type contains "mp4" and source.width >= 1920
       assign video_source = source
-      assign video_poster = section.settings.landing_video.preview_image.src
-      assign video_heading = section.blocks.first.settings.heading
-      break
+    elsif source.mime_type contains "application/x-mpegURL"
+      assign secodary_video_source = source
     endif
   endfor
+  assign video_poster = section.settings.landing_video.preview_image.src
+  assign video_heading = section.blocks.first.settings.heading
 %}
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.db-landing-video__heading').classList.add('playing');
-  });
-  
-  
-</script>
-
-{%- style -%}
- /* .db-landing-video__heading.db-animate.playing {
-    animation-duration: {{ section.settings.db_landing_video.duration | minus: 2000 }}ms;
-  } */
-{%- endstyle -%}
-
 {%- if video_source.url != blank and video_source.mime_type != blank -%}
-  <div id="db-video-landing-{{ section.id }}" class="db-landing-video__container">
-    <video class="db-landing-video__video" autoplay muted playsinline poster="{{ video_poster }}">>
+  <div id="db-video-landing-{{ section.id }}" class="db-landing-video__container color-inverse">
+    <video class="db-landing-video__video" autoplay muted playsinline poster="{{ video_poster }}">
       <source src="{{ video_source.url }}" type="{{ video_source.mime_type }}">
+      <source src="{{ secodary_video_source.url }}" type="{{ secodary_video_source.mime_type }}">
       Your browser does not support the video tag.
     </video>
     {%- if video_heading.size >= 1 -%}

@@ -5,11 +5,11 @@
 }
 
 .db-landing-video__container {
-  position: relative;
-  width: 100%;
   height: 100%;
   margin-top: -87px;
   overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 @media screen and (min-width: 990px) {
