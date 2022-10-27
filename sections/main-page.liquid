@@ -25,6 +25,10 @@
   <div class="rte">
     {{ page.content }}
   </div>
+  {%- if section.settings.db_container_link_bar == true -%}
+    <div class="db-image-with-text__link_bar">
+    </div>
+  {%- endif -%}
 </div>
 
 {% schema %}
@@ -33,6 +37,12 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "db_container_link_bar",
+      "default": true,
+      "label": "Add link bar to DB image with text sections"
+    },
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"

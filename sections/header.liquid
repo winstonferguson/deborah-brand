@@ -106,6 +106,33 @@
   }
 {%- endstyle -%}
 
+{%- if section.settings.inline_menu_on_desktop == false -%}
+  <style>
+    
+  @media screen and (min-width: 990px) {
+    header-drawer {
+      display: block;
+    }
+    
+    .header__heading-link {
+      padding: 0;
+    }
+
+    .header__inline-menu {
+      display: none;
+    }
+
+    .overflow-hidden-tablet {
+      overflow: hidden;
+    }
+  }
+
+  </style>
+
+{%- endif -%}
+
+
+
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
@@ -863,6 +890,12 @@
       "id": "show_line_separator",
       "default": true,
       "label": "t:sections.header.settings.show_line_separator.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "inline_menu_on_desktop",
+      "default": false,
+      "label": "Show inline menu on desktop"
     },
     {
       "type": "checkbox",
