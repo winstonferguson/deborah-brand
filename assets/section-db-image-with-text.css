@@ -38,6 +38,12 @@
 
 @media screen and (min-width: 990px) {
   .db-image-with-text__content {
+    padding: 20px 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .db-image-with-text__content {
     padding: 20px 80px;
   }
 }
