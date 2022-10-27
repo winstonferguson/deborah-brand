@@ -3,6 +3,7 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "db_container_link_bar": true,
         "padding_top": 28,
         "padding_bottom": 28
       }
@@ -145,6 +146,7 @@
         "template--15705707741367__b82790e9-3a29-44f0-90ff-cd6b5aa33f55-16666361484e77d574-2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/esmagazine.png",
             "title": "",
             "text": "",
             "link_label": "",
