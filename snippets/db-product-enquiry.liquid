@@ -1,9 +1,7 @@
 <style>
-  @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
   .product-enquiry {
+    -webkit-animation: fadein 0.5s;
+    animation: fadein 0.5s;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -14,32 +12,6 @@
     position: fixed;
     top: 0;    
     z-index: 9999;
-    animation: fadein 0.5s;
-  }
-
-  .product-enquiry__header {
-    align-items: center;
-    background-color: rgb(var(--color-base-background-2));
-    color: rgb(var(--color-base-accent-2));
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 15px 10px 30px;
-  }
-  .product-enquiry__header h3 {
-  color: #fff;
-}
-
-  .product-enquiry__icon {
-    cursor: pointer;
-    height: 5rem;
-    padding: 7px;
-    width: 5rem;
-  }
-
-  .product-enquiry__content {
-    background-color: rgb(var(--color-base-background-1));
-    max-width: 500px;
-    width: 100%; 
   }
 
   .product-enquiry__background {
@@ -55,14 +27,15 @@
     width: 100%;    
   }
 
+  .product-enquiry__content {
+    background-color: rgb(var(--color-base-background-1));
+    max-width: 500px;
+    width: 100%; 
+  }
+
   .product-enquiry__form { 
     padding: 30px 15px; 
   }
-
-  .product-enquiry__form .form-status-list {
-    margin: 1rem 0 2rem 0;
-  }
-
 
   @media screen and (min-width: 750px) {
     .product-enquiry__form { 
@@ -70,8 +43,6 @@
     }
   }
 
-
-    
   .product-enquiry__form .field__input {
     border-color: transparent;
     border-bottom: 1px solid rgb(var(--color-base-accent-1));
@@ -85,25 +56,42 @@
     box-shadow: none;
   }
 
-  .product-enquiry .product-form__submit {
-    margin-top: 3rem;
-  }
-
   .product-enquiry__form .field.radio {
     display: block;
     margin-top: 15px;
     padding-left: 15px;
   }
-  .product-enquiry__form .field.radio input{
+
+  .product-enquiry__form .field.radio input {
     margin: 0 5px 0 15px;
   }
 
-  .center-align-vertical {
-    align-items: center;
-    display: flex;
+  .product-enquiry__form .product-form__submit {
+    margin-top: 3rem;
   }
 
+  .product-enquiry__form .form-status-list {
+    margin: 0 0 1rem 0;
+  }
 
+  .product-enquiry__header {
+    align-items: center;
+    background-color: rgb(var(--color-base-background-2));
+    color: rgb(var(--color-base-accent-2));
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 10px 30px;
+  }
+  .product-enquiry__header h3 {
+    color: #fff;
+  }
+
+  .product-enquiry__icon {
+    cursor: pointer;
+    height: 5rem;
+    padding: 7px;
+    width: 5rem;
+  }  
 </style>
 
 <script>
@@ -118,8 +106,6 @@
       }));
     });
 
-    console.log(document.querySelector(".form-status"));
-    
     if (document.querySelector(".form-status")) {
       document.querySelector('.product-enquiry').classList.remove('hidden');
     }
