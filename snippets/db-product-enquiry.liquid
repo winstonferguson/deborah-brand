@@ -117,17 +117,16 @@
         document.body.classList.toggle('overflow-hidden-tablet');        
       }));
     });
+
+    console.log(document.querySelector(".form-status"));
+    
+    if (document.querySelector(".form-status")) {
+      document.querySelector('.product-enquiry').classList.remove('hidden');
+    }
   });
 </script>
-<script>
-  console.log( "Form object start" );
-  console.log( {{ form | json }} );
-  console.log( {{ form.posted_successfully? | json }} );
-  console.log( {{ form.errors | json }} );
-  console.log( "Form object end" );
-</script>
 
-<div class="product-enquiry{% unless form.posted_successfully? or form.errors %} hidden{% endunless %}">
+<div class="product-enquiry hidden">
   <div class="product-enquiry__background product-enquiry__toggle">
   </div>
   <div class="product-enquiry__content">
