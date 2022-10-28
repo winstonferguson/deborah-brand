@@ -615,7 +615,12 @@
                   </div>
 
                   {%- if product.type contains "Bespoke" -%}
-                    {% render 'db-product-enquiry', product: product %}
+                    <button
+                      type="button"
+                      name="enquire"
+                      id="productEnquireButton"  
+                      class="product-enquiry__toggle product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+                    >Enquire</button>
                   {%- else -%}
                     {%- form 'product',
                       product,
@@ -1293,6 +1298,9 @@
     }
   </script>
 </section>
+{%- if product.type contains "Bespoke" -%}
+  {% render 'db-product-enquiry', product: product %}
+{%- endif %}
 
 {% schema %}
 {
