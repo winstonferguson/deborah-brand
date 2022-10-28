@@ -59,6 +59,11 @@
     padding: 30px 15px; 
   }
 
+  .product-enquiry__form .form-status-list {
+    margin: 1rem 0 2rem 0;
+  }
+
+
   @media screen and (min-width: 750px) {
     .product-enquiry__form { 
       padding: 30px; 
@@ -113,6 +118,13 @@
       }));
     });
   });
+</script>
+<script>
+  console.log( "Form object start" );
+  console.log( {{ form | json }} );
+  console.log( {{ form.posted_successfully? | json }} );
+  console.log( {{ form.errors | json }} );
+  console.log( "Form object end" );
 </script>
 
 <div class="product-enquiry{% unless form.posted_successfully? or form.errors %} hidden{% endunless %}">
