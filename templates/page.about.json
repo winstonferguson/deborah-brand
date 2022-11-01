@@ -3,6 +3,7 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "db_container_link_bar": true,
         "padding_top": 28,
         "padding_bottom": 28
       }
@@ -19,7 +20,7 @@
         "template--15698579554487__d6024885-77c2-4219-adcb-bb08fa2a7591-166619668591253a0f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Deborah Brand has always been a fashion visionary. At sixteen she created the cult label Sub Couture, located in the hip London fashion Emporium Hyper Hyper, selling dresses of designer quality at the pricing of high street retail stores. Within two years, her designs retailed internationally in leading department stores including Harrods, Joyce in the Far East and Barneys NYC.<br\/><br\/>Always inspired by celebrating the female form, emphasising the desirable hour-glass figure continues to fascinate Deborah, after spending a decade in perfecting the ultimate corset.<br\/><br\/>Deborah Brand Corsets have been worn by diverse, global style icons from Amal Clooney, Kim Kardashian and Cara Delavigne to Billie Eilsih and Salma Hayek.<\/p>"
+            "text": "<p>Deborah Brand has always been a fashion visionary. At sixteen she created the cult label Sub Couture, located in the hip London fashion Emporium Hyper Hyper, selling dresses of designer quality at the pricing of high street retail stores. Within two years, her designs retailed internationally in leading department stores including Harrods, Joyce in the Far East and Barneys NYC.<br\/><br\/>Always inspired by celebrating the female form, emphasising the desirable hour-glass figure continues to fascinate Deborah, after spending a decade in perfecting the ultimate corset.<br\/><br\/>Deborah Brand Corsets have been worn by diverse, global style icons from Amal Clooney, Kim Kardashian and Cynthia Erivo to Billie Eilsih and Salma Hayek.<\/p>"
           }
         }
       },
