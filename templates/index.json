@@ -14,8 +14,8 @@
         "7d02eae2-5394-465d-a287-afb004c012e9"
       ],
       "settings": {
-        "db_landing_video": "shopify:\/\/files\/videos\/db-teaser.mp4",
-        "db_landing_animate": true,
+        "db_landing_video": "shopify:\/\/files\/videos\/landing_long_alt.mp4",
+        "db_landing_animate": false,
         "db_landing_heading_inverse": false
       }
     }

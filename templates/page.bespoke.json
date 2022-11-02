@@ -107,7 +107,7 @@
     "6aefa938-045b-4128-9fce-d196257c61b9": {
       "type": "featured-collection",
       "settings": {
-        "title": "Shop Bespoke",
+        "title": "View Bespoke",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -121,7 +121,7 @@
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
         "image_ratio": "portrait",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
