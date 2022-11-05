@@ -614,7 +614,7 @@
                     <span class="product-form__error-message"></span>
                   </div>
 
-                  {%- if product.type contains "Bespoke" -%}
+                  {%- if product.type contains "Bespoke" or product.type contains "commissions" -%}
                     <button
                       type="button"
                       name="enquire"
