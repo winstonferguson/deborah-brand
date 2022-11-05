@@ -3,67 +3,20 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "db_container_link_bar": true,
         "padding_top": 28,
         "padding_bottom": 28
-      }
-    },
-    "d6024885-77c2-4219-adcb-bb08fa2a7591": {
-      "type": "db-image-with-text",
-      "blocks": {
-        "template--15698579554487__d6024885-77c2-4219-adcb-bb08fa2a7591-166619668591253a0f-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Designer"
-          }
-        },
-        "template--15698579554487__d6024885-77c2-4219-adcb-bb08fa2a7591-166619668591253a0f-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Deborah Brand has always been a fashion visionary. At sixteen she created the cult label Sub Couture, located in the hip London fashion Emporium Hyper Hyper, selling dresses of designer quality at the pricing of high street retail stores. Within two years, her designs retailed internationally in leading department stores including Harrods, Joyce in the Far East and Barneys NYC.<\/p><p>Always inspired by celebrating the female form, emphasising the desirable hour-glass figure continues to fascinate Deborah, after spending a decade in perfecting the ultimate corset.<\/p><p>Deborah Brand Corsets have been worn by diverse, global style icons from Amal Clooney, Kim Kardashian and Cara Delevingne to Billie Eilish and Salma Hayek.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15698579554487__d6024885-77c2-4219-adcb-bb08fa2a7591-166619668591253a0f-0",
-        "template--15698579554487__d6024885-77c2-4219-adcb-bb08fa2a7591-166619668591253a0f-1"
-      ],
-      "settings": {
-        "db_image_with_text_image": "shopify:\/\/shop_images\/deborah_brand.jpg"
-      }
-    },
-    "facf9530-5e57-4e46-b477-30195dccd0bf": {
-      "type": "db-image-with-text",
-      "blocks": {
-        "template--15698579554487__facf9530-5e57-4e46-b477-30195dccd0bf-166619668591253a0f-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Corsets"
-          }
-        },
-        "template--15698579554487__facf9530-5e57-4e46-b477-30195dccd0bf-166619668591253a0f-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Over 100 components and an unprecedented 45 bones in 5 consistencies are utlised to create the ultimate Deborah Brand corset.<\/p><p>However, Deborah understands the daunting prospect of getting into a corset, hence she has developed her famed underbust ‘Mila’ Corset which can easily be slipped on and laced in under 60 seconds and removed in under 30 seconds!<\/p><p>Her corsets comfortably reduce the waist measurements by 2 inches and up to 5 inches for the very dedicated.<\/p><p>Deborah’s fashion sense, combined with the highest level of craft, create the most pre-eminent corsets.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15698579554487__facf9530-5e57-4e46-b477-30195dccd0bf-166619668591253a0f-0",
-        "template--15698579554487__facf9530-5e57-4e46-b477-30195dccd0bf-166619668591253a0f-1"
-      ],
-      "settings": {
-        "db_image_with_text_image": "shopify:\/\/shop_images\/peacock_9085a024-0beb-466a-bca9-68315e044fb6.jpg"
       }
     },
     "6aefa938-045b-4128-9fce-d196257c61b9": {
       "type": "featured-collection",
       "settings": {
-        "title": "Shop Bespoke",
+        "title": "View Commissions",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "bespoke",
+        "collection": "commissions",
         "products_to_show": 4,
         "columns_desktop": 2,
         "full_width": false,
@@ -85,8 +38,6 @@
   },
   "order": [
     "main",
-    "d6024885-77c2-4219-adcb-bb08fa2a7591",
-    "facf9530-5e57-4e46-b477-30195dccd0bf",
     "6aefa938-045b-4128-9fce-d196257c61b9"
   ]
 }
