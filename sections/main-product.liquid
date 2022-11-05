@@ -614,14 +614,14 @@
                     <span class="product-form__error-message"></span>
                   </div>
 
-                  {%- if product.type contains "Bespoke" or product.type contains "commissions" -%}
+                  {%- if product.type contains "Bespoke" -%}
                     <button
                       type="button"
                       name="enquire"
                       id="productEnquireButton"  
                       class="product-enquiry__toggle product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
                     >Enquire</button>
-                  {%- else -%}
+                  {%- elsif product.type contains "Ready-to-Wear"  -%}
                     {%- form 'product',
                       product,
                       id: product_form_id,
