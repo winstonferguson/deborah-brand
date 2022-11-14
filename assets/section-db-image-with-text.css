@@ -10,6 +10,7 @@
     flex-direction: row-reverse;
     margin: 0 auto;
     max-width: 1800px;
+    overflow: hidden;
   }
 
   .section:nth-of-type(even) .db-image-with-text__container {
@@ -57,7 +58,7 @@
 
 @media screen and (min-width: 750px) {
   .db-image-with-text__heading {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 }
 
@@ -66,9 +67,14 @@
 }
 
 .db-image-with-text__image img {
-  display: block !important;
   height: auto !important;
+  object-fit: cover !important;
+  object-position: center center;
   width: 100% !important;
+}
+
+.db-image-with-text__image.landscape img {
+  height: 100% !important;
 }
 
 @media screen and (min-width: 990px) {
@@ -77,6 +83,10 @@
     max-width: 50%;
     min-width: 50%;
     width: 50%;
+  }
+
+  .db-image-with-text__image.landscape {
+    height: 100%;
   }
 }
 
