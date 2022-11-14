@@ -14,7 +14,11 @@
         "7d02eae2-5394-465d-a287-afb004c012e9"
       ],
       "settings": {
+<<<<<<< HEAD
         "db_landing_video": "shopify:\/\/files\/videos\/landing_long_alt.mp4",
+=======
+        "db_landing_video": "shopify:\/\/files\/videos\/landing_nobw.mp4",
+>>>>>>> e12b9611b59cdb14335129e3615fa74cd7a31e4d
         "db_landing_heading_inverse": false
       }
     }
