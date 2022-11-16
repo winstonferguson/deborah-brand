@@ -1,3 +1,4 @@
+// only setUpDBContainers once
 var d3b0rahBContainersActive = null;
 
 function setUpDBContainers() {
@@ -70,21 +71,22 @@ function sizeDBContainers() {
   }
 }
 
-function DBContainerImageClass(dbcontainer) {
-  const dbImageContent = dbcontainer.querySelector(".db-image-with-text__image");
-  const dbImage = dbcontainer.querySelector("img");
+function addImageClassDBContainer(dbImage) {
   const dbImageOrientation = (dbImage.offsetHeight > dbImage.offsetWidth) ? "portrait" : "landscape";
 
-  return dbImageContent.classList.add(dbImageOrientation);
+  return dbImage.parentElement.classList.add(dbImageOrientation);
 }
 
 function sizeDBContainer(dbcontainer) {
   const dbContent = dbcontainer.querySelector(".db-image-with-text__content");
-  const dbContentHeight = dbContent.offsetHeight;
+  const dbImage = dbcontainer.querySelector(".db-image-with-text__image img");
+  const dbContentCalcHeight = dbContent.offsetHeight + 400;
 
-  DBContainerImageClass(dbcontainer);
+  addImageClassDBContainer(dbImage);
 
-  return dbcontainer.style.height = dbContentHeight + 400 + "px";
+  if (dbContentCalcHeight < dbImage.offsetHeight) {
+    return dbcontainer.style.height = dbContent.offsetHeight + 400 + "px";
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
