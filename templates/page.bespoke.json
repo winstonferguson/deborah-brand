@@ -8,28 +8,28 @@
         "padding_bottom": 28
       }
     },
-    "56acd00b-0e08-430c-9676-19a1b4e0b026": {
+    "01d4b7dc-0c19-45ee-a899-5cb65d24165a": {
       "type": "db-image-with-text",
       "blocks": {
-        "template--15705696534711__56acd00b-0e08-430c-9676-19a1b4e0b026-16666359826ea43407-0": {
+        "template--15705696534711__01d4b7dc-0c19-45ee-a899-5cb65d24165a-16666359826ea43407-0": {
           "type": "heading",
           "settings": {
-            "heading": "2nd Fitting"
+            "heading": "Measurements"
           }
         },
-        "template--15705696534711__56acd00b-0e08-430c-9676-19a1b4e0b026-16666359826ea43407-1": {
+        "template--15705696534711__01d4b7dc-0c19-45ee-a899-5cb65d24165a-16666359826ea43407-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign off of surface shape and surface design discussion<\/p>"
+            "text": "<p>Concept presentation, 15 measurements taken, Concept agreed.<\/p>"
           }
         }
       },
       "block_order": [
-        "template--15705696534711__56acd00b-0e08-430c-9676-19a1b4e0b026-16666359826ea43407-0",
-        "template--15705696534711__56acd00b-0e08-430c-9676-19a1b4e0b026-16666359826ea43407-1"
+        "template--15705696534711__01d4b7dc-0c19-45ee-a899-5cb65d24165a-16666359826ea43407-0",
+        "template--15705696534711__01d4b7dc-0c19-45ee-a899-5cb65d24165a-16666359826ea43407-1"
       ],
       "settings": {
-        "db_image_with_text_image": "shopify:\/\/shop_images\/IMG_7558.jpg"
+        "db_image_with_text_image": "shopify:\/\/shop_images\/Front_of_website.jpg"
       }
     },
     "204c942c-1c85-4e3f-bf85-cdf1716e7222": {
@@ -56,6 +56,30 @@
         "db_image_with_text_image": "shopify:\/\/shop_images\/deb_corsets_425_of_443.jpg"
       }
     },
+    "56acd00b-0e08-430c-9676-19a1b4e0b026": {
+      "type": "db-image-with-text",
+      "blocks": {
+        "template--15705696534711__56acd00b-0e08-430c-9676-19a1b4e0b026-16666359826ea43407-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "2nd Fitting"
+          }
+        },
+        "template--15705696534711__56acd00b-0e08-430c-9676-19a1b4e0b026-16666359826ea43407-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sign off of surface shape and surface design discussion<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15705696534711__56acd00b-0e08-430c-9676-19a1b4e0b026-16666359826ea43407-0",
+        "template--15705696534711__56acd00b-0e08-430c-9676-19a1b4e0b026-16666359826ea43407-1"
+      ],
+      "settings": {
+        "db_image_with_text_image": "shopify:\/\/shop_images\/IMG_7558.jpg"
+      }
+    },
     "60518be4-91f3-496e-a831-569e938aa820": {
       "type": "db-image-with-text",
       "blocks": {
@@ -78,30 +102,6 @@
       ],
       "settings": {
         "db_image_with_text_image": "shopify:\/\/shop_images\/deb_corsets_417_of_443.jpg"
-      }
-    },
-    "01d4b7dc-0c19-45ee-a899-5cb65d24165a": {
-      "type": "db-image-with-text",
-      "blocks": {
-        "template--15705696534711__01d4b7dc-0c19-45ee-a899-5cb65d24165a-16666359826ea43407-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Measurements"
-          }
-        },
-        "template--15705696534711__01d4b7dc-0c19-45ee-a899-5cb65d24165a-16666359826ea43407-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Concept presentation, 15 measurements taken, Concept agreed.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15705696534711__01d4b7dc-0c19-45ee-a899-5cb65d24165a-16666359826ea43407-0",
-        "template--15705696534711__01d4b7dc-0c19-45ee-a899-5cb65d24165a-16666359826ea43407-1"
-      ],
-      "settings": {
-        "db_image_with_text_image": "shopify:\/\/shop_images\/Front_of_website.jpg"
       }
     },
     "6aefa938-045b-4128-9fce-d196257c61b9": {
@@ -134,10 +134,10 @@
   },
   "order": [
     "main",
-    "56acd00b-0e08-430c-9676-19a1b4e0b026",
-    "204c942c-1c85-4e3f-bf85-cdf1716e7222",
-    "60518be4-91f3-496e-a831-569e938aa820",
     "01d4b7dc-0c19-45ee-a899-5cb65d24165a",
+    "204c942c-1c85-4e3f-bf85-cdf1716e7222",
+    "56acd00b-0e08-430c-9676-19a1b4e0b026",
+    "60518be4-91f3-496e-a831-569e938aa820",
     "6aefa938-045b-4128-9fce-d196257c61b9"
   ]
 }
