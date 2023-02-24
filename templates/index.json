@@ -6,7 +6,7 @@
         "7d02eae2-5394-465d-a287-afb004c012e9": {
           "type": "heading",
           "settings": {
-            "heading": "The UK's Premiere Corsetiere"
+            "heading": "The UK's Premier Corsetiere"
           }
         }
       },
@@ -14,7 +14,7 @@
         "7d02eae2-5394-465d-a287-afb004c012e9"
       ],
       "settings": {
-        "db_landing_video": "shopify:\/\/files\/videos\/brand-landing-video.mp4",
+        "db_landing_video": "shopify:\/\/files\/videos\/db_landing_update.mp4",
         "db_landing_heading_inverse": false
       }
     }
