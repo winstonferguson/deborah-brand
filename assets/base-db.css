@@ -256,3 +256,15 @@ h2 {
     max-width: 50% !important;
   }
 }
+
+/* cart page */
+
+.cart__footer {
+  padding-bottom: 50px;
+}
+
+.cart__footer .cart__checkout-button {
+  min-width: calc(12rem + var(--buttons-border-width) * 2);
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+  padding: 0.25rem 0.5rem;
+}
