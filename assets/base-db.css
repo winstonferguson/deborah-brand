@@ -259,8 +259,8 @@ h2 {
 
 /* cart page */
 
-.cart__footer {
-  padding-bottom: 50px;
+.cart__blocks {
+  margin-bottom: 50px;
 }
 
 .cart__footer .cart__checkout-button {
