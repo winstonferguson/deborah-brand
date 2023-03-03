@@ -268,3 +268,13 @@ h2 {
   min-height: calc(4.5rem + var(--buttons-border-width) * 2);
   padding: 0.25rem 0.5rem;
 }
+
+.h0 {
+  font-size: calc(var(--font-heading-scale) * 3.2rem);
+}
+
+@media only screen and (min-width: 750px) {
+  .h0 {
+    font-size: calc(var(--font-heading-scale) * 5.2rem);
+  }
+}
