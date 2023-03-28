@@ -17,54 +17,9 @@
         "db_landing_video": "shopify:\/\/files\/videos\/db_landing_update.mp4",
         "db_landing_heading_inverse": false
       }
-    },
-    "d33fb2f1-2fb2-432c-b5b4-a586cdfc31dd": {
-      "type": "rich-text",
-      "blocks": {
-        "template--15705695813815__d33fb2f1-2fb2-432c-b5b4-a586cdfc31dd-1679997824c512f9be-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>The finest in bespoke Corsetry<\/p>",
-            "heading_size": "h2"
-          }
-        },
-        "template--15705695813815__d33fb2f1-2fb2-432c-b5b4-a586cdfc31dd-1679997824c512f9be-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": ""
-          }
-        },
-        "template--15705695813815__d33fb2f1-2fb2-432c-b5b4-a586cdfc31dd-1679997824c512f9be-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--15705695813815__d33fb2f1-2fb2-432c-b5b4-a586cdfc31dd-1679997824c512f9be-0",
-        "template--15705695813815__d33fb2f1-2fb2-432c-b5b4-a586cdfc31dd-1679997824c512f9be-1",
-        "template--15705695813815__d33fb2f1-2fb2-432c-b5b4-a586cdfc31dd-1679997824c512f9be-2"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": false,
-        "padding_top": 52,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
-    "d6f899b3-fd7e-4e7b-8d94-c8c90fcdff41",
-    "d33fb2f1-2fb2-432c-b5b4-a586cdfc31dd"
+    "d6f899b3-fd7e-4e7b-8d94-c8c90fcdff41"
   ]
 }
