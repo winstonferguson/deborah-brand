@@ -614,14 +614,7 @@
                     <span class="product-form__error-message"></span>
                   </div>
 
-                  {%- if product.type contains "Bespoke"  -%}
-                    <button
-                      type="button"
-                      name="enquire"
-                      id="productEnquireButton"  
-                      class="product-enquiry__toggle product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
-                    >Enquire</button>
-                  {%- elsif product.type contains "commission" -%}
+                  {%- if product.type contains "commission" -%}
                   {%- else -%}
                     {%- form 'product',
                       product,
@@ -670,6 +663,14 @@
                         {%- endif -%}
                       </div>
                     {%- endform -%}
+                    {%- if product.type contains "Bespoke"  -%}
+                      <button
+                        type="button"
+                        name="enquire"
+                        id="productEnquireButton"  
+                        class="product-enquiry__toggle product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+                      >Enquire</button>
+                    {%- endif -%}
                   {%- endif -%}
                 </product-form>        
 
