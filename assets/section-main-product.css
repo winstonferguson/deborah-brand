@@ -409,7 +409,7 @@ a.product__text {
   padding: 0;
 }
 
-.product__price-note {
+.product__price-note.has_price {
   margin-bottom: -1rem;
 }
 

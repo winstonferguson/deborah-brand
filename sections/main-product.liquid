@@ -345,7 +345,7 @@
               </div>
             {%- when 'price' -%}
               {% if product.metafields.custom.price_note %}
-                <div class="product__price-note caption rte">
+                <div class="product__price-note caption rte{% unless product.metafields.custom.hide_price %} has_price{% endunless %}">
                   {{ product.metafields.custom.price_note }}
                 </div>
               {% endif %}
