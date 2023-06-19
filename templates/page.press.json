@@ -14,7 +14,7 @@
         "template--15705707741367__9cfd7609-7cea-4338-9d19-44564a36b79c-16666361484e77d574-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vogue.png",
+            "image": "shopify://shop_images/vogue.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -24,7 +24,7 @@
         "template--15705707741367__9cfd7609-7cea-4338-9d19-44564a36b79c-16666361484e77d574-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gq.png",
+            "image": "shopify://shop_images/gq.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -34,7 +34,7 @@
         "template--15705707741367__9cfd7609-7cea-4338-9d19-44564a36b79c-16666361484e77d574-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/thetelegraph.png",
+            "image": "shopify://shop_images/thetelegraph.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -70,7 +70,7 @@
         "template--15705707741367__b82790e9-3a29-44f0-90ff-cd6b5aa33f55-16666361484e77d574-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/thetimes.png",
+            "image": "shopify://shop_images/thetimes.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -80,7 +80,7 @@
         "template--15705707741367__b82790e9-3a29-44f0-90ff-cd6b5aa33f55-16666361484e77d574-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/marieclaire.png",
+            "image": "shopify://shop_images/marieclaire.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -90,7 +90,7 @@
         "template--15705707741367__b82790e9-3a29-44f0-90ff-cd6b5aa33f55-16666361484e77d574-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/esmagazine.png",
+            "image": "shopify://shop_images/esmagazine.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -126,7 +126,7 @@
         "template--15705707741367__9b9a4b16-88f7-4097-a9c8-dbe054b480e6-16666361484e77d574-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/elle.png",
+            "image": "shopify://shop_images/elle.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -136,7 +136,7 @@
         "template--15705707741367__9b9a4b16-88f7-4097-a9c8-dbe054b480e6-16666361484e77d574-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/tatler.png",
+            "image": "shopify://shop_images/tatler.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -146,7 +146,7 @@
         "template--15705707741367__9b9a4b16-88f7-4097-a9c8-dbe054b480e6-16666361484e77d574-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bazaar_48cb1f28-0fbd-4c11-ae7a-e1573c2d268d.png",
+            "image": "shopify://shop_images/bazaar_48cb1f28-0fbd-4c11-ae7a-e1573c2d268d.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -182,7 +182,7 @@
         "template--15705726976183__62921582-51fa-44fe-b110-70c09de032e4-16669427450e20a196-1": {
           "type": "text",
           "settings": {
-            "text": "<p>\"At first I wasn't convinced, I mean they look fabulous on twenty something and thirty something fashion mavens like Charli Howard (30) and Dylan Weller (24), who both feature on Brand's instagram feed, but was it really a look for a work-from-home, fifty something mum-of-two, who generally slouches around in jeans (OK then, sweatpants) and a T-shirt? I didn't think so. But then I tried it on and I'm a fully paid-up convert. I absolutely love it. So what persuaded me out of my elasticated waists and into waist-cinching lacing? First, the sheer artistry. Like Eilish, I'm drawn to the beauty, the craftsmanship, the hourglass silhouette. I feel elevated in its mere presence. Once I'd put it on and yanked on the straps - the corset has been designed so that you can put it on yourself - I looked in the mirror and thought \"not bad for an old bird\". I swear the corset has improved my posture, and not just when I'm wearing it. Of course, it's impossible to slouch when you're bound so tight, but the corset has also acted as a kind of sartorial motivation, reminding me that, yes, I do have a waist.\" <\/p><p>Sharon Walker, The Daily Telegraph<\/p>"
+            "text": "<p>\"At first I wasn't convinced, I mean they look fabulous on twenty something and thirty something fashion mavens like Charli Howard (30) and Dylan Weller (24), who both feature on Brand's instagram feed, but was it really a look for a work-from-home, fifty something mum-of-two, who generally slouches around in jeans (OK then, sweatpants) and a T-shirt? I didn't think so. But then I tried it on and I'm a fully paid-up convert. I absolutely love it. So what persuaded me out of my elasticated waists and into waist-cinching lacing? First, the sheer artistry. Like Eilish, I'm drawn to the beauty, the craftsmanship, the hourglass silhouette. I feel elevated in its mere presence. Once I'd put it on and yanked on the straps - the corset has been designed so that you can put it on yourself - I looked in the mirror and thought \"not bad for an old bird\". I swear the corset has improved my posture, and not just when I'm wearing it. Of course, it's impossible to slouch when you're bound so tight, but the corset has also acted as a kind of sartorial motivation, reminding me that, yes, I do have a waist.\" </p><p>Sharon Walker, The Daily Telegraph</p>"
           }
         }
       },
@@ -204,7 +204,7 @@
         "template--15705726976183__916b6c2d-25d0-4953-a5e6-07a5becf0643-16669427450e20a196-1": {
           "type": "text",
           "settings": {
-            "text": "<p>“There’s a whole other world of corsets out there, the real McCoy, designed not as a flourish but to re-draw your lines. The London-based Deborah Brand makes stupendous bespoke pieces, priced from £695, that will shrink your waist by up to five inches. With more than 100 components including 45 steels and polymer bones\" <\/p><p>Anna Murphy, The Times. <\/p>"
+            "text": "<p>“There’s a whole other world of corsets out there, the real McCoy, designed not as a flourish but to re-draw your lines. The London-based Deborah Brand makes stupendous bespoke pieces, priced from £695, that will shrink your waist by up to five inches. With more than 100 components including 45 steels and polymer bones\" </p><p>Anna Murphy, The Times. </p>"
           }
         }
       },
@@ -226,7 +226,7 @@
         "template--15705726976183__b4cf5787-5fd4-4baf-bb9b-5f45c0a71922-16669427450e20a196-1": {
           "type": "text",
           "settings": {
-            "text": "<p>\"It's rare that anything is ever 100% Ace. There always seems to be something - some little thing - with Deborah's work everything - every little thing - perhaps especially the little things - the details, are all in the realm of perfection\"<\/p><p>Harland Miller<\/p>"
+            "text": "<p>\"It's rare that anything is ever 100% Ace. There always seems to be something - some little thing - with Deborah's work everything - every little thing - perhaps especially the little things - the details, are all in the realm of perfection\"</p><p>Harland Miller</p>"
           }
         }
       },

@@ -20,7 +20,7 @@
       Your browser does not support the video tag.
     </video>
     {%- if video_heading.size >= 1 -%}
-      <h2 class="db-landing-video__heading{% if section.settings.db_landing_animate  %} db-animate{% endif %}{% if section.settings.db_landing_heading_inverse %} db-inverse{% endif %}">{{ video_heading }}</h2>
+     <h2 class="db-landing-video__heading{% if section.settings.db_landing_animate %} db-animate{% endif %}{% if section.settings.db_landing_heading_inverse %} db-inverse{% endif %}">{{ video_heading }}</h2>
     {%- endif -%}
   </div>
 {%- endif -%}
@@ -64,6 +64,8 @@
       "name": "DB Landing Video"
     }
   ],
-  "templates": ["index"]
+  "templates": [
+    "index"
+  ]
 }
 {% endschema %}

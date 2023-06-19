@@ -108,7 +108,7 @@
     "social_twitter_link": "",
     "social_facebook_link": "",
     "social_pinterest_link": "",
-    "social_instagram_link": "https:\/\/www.instagram.com\/deborahbrand\/",
+    "social_instagram_link": "https://www.instagram.com/deborahbrand/",
     "social_tiktok_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
@@ -118,7 +118,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
-    "checkout_logo_image": "shopify:\/\/shop_images\/dbLogo.png",
+    "checkout_logo_image": "shopify://shop_images/dbLogo.png",
     "checkout_logo_size": "large",
     "checkout_accent_color": "#b19f68",
     "checkout_button_color": "#796233",
@@ -132,7 +132,7 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/dbLogoWhite.png",
+          "logo": "shopify://shop_images/dbLogoWhite.png",
           "logo_width": 250,
           "logo_position": "top-center",
           "menu": "main-menu",
@@ -164,7 +164,7 @@
       "main-password-header": {
         "type": "main-password-header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/dbLogoWhite.png",
+          "logo": "shopify://shop_images/dbLogoWhite.png",
           "logo_max_width": 200,
           "color_scheme": "inverse"
         }
@@ -352,7 +352,7 @@
               "type": "text",
               "settings": {
                 "heading": "Our mission",
-                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+                "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
               }
             }
           },

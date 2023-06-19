@@ -20,7 +20,7 @@
         "template--15705696534711__01d4b7dc-0c19-45ee-a899-5cb65d24165a-16666359826ea43407-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Concept presentation, 15 measurements taken, Concept agreed.<\/p>"
+            "text": "<p>Concept presentation, 15 measurements taken, Concept agreed.</p>"
           }
         }
       },
@@ -29,7 +29,7 @@
         "template--15705696534711__01d4b7dc-0c19-45ee-a899-5cb65d24165a-16666359826ea43407-1"
       ],
       "settings": {
-        "db_image_with_text_image": "shopify:\/\/shop_images\/IMG-7803.jpg"
+        "db_image_with_text_image": "shopify://shop_images/IMG-7803.jpg"
       }
     },
     "204c942c-1c85-4e3f-bf85-cdf1716e7222": {
@@ -44,7 +44,7 @@
         "template--15705726943415__204c942c-1c85-4e3f-bf85-cdf1716e7222-16668997294edc9a1e-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Transfer of measurements to a mannequin. <\/p><p><\/p><p>Mainstay of Corset made in Corsetry Coutil to view.<\/p>"
+            "text": "<p>Transfer of measurements to a mannequin. </p><p></p><p>Mainstay of Corset made in Corsetry Coutil to view.</p>"
           }
         }
       },
@@ -53,7 +53,7 @@
         "template--15705726943415__204c942c-1c85-4e3f-bf85-cdf1716e7222-16668997294edc9a1e-1"
       ],
       "settings": {
-        "db_image_with_text_image": "shopify:\/\/shop_images\/Facetune-24-11-2022-11-44-39.jpg"
+        "db_image_with_text_image": "shopify://shop_images/Facetune-24-11-2022-11-44-39.jpg"
       }
     },
     "56acd00b-0e08-430c-9676-19a1b4e0b026": {
@@ -68,7 +68,7 @@
         "template--15705696534711__56acd00b-0e08-430c-9676-19a1b4e0b026-16666359826ea43407-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign off of surface shape and surface design discussion<\/p>"
+            "text": "<p>Sign off of surface shape and surface design discussion</p>"
           }
         }
       },
@@ -77,7 +77,7 @@
         "template--15705696534711__56acd00b-0e08-430c-9676-19a1b4e0b026-16666359826ea43407-1"
       ],
       "settings": {
-        "db_image_with_text_image": "shopify:\/\/shop_images\/IMG-7804-2.jpg"
+        "db_image_with_text_image": "shopify://shop_images/IMG-7804-2.jpg"
       }
     },
     "60518be4-91f3-496e-a831-569e938aa820": {
@@ -92,7 +92,7 @@
         "template--15705696534711__60518be4-91f3-496e-a831-569e938aa820-16666359826ea43407-1": {
           "type": "text",
           "settings": {
-            "text": "<p>All minor alterations will be carried out then Corset will undergo a meticulous assessment <\/p><p>Corset is then named, numbered and logged for authenticity.<\/p>"
+            "text": "<p>All minor alterations will be carried out then Corset will undergo a meticulous assessment </p><p>Corset is then named, numbered and logged for authenticity.</p>"
           }
         }
       },
@@ -101,7 +101,7 @@
         "template--15705696534711__60518be4-91f3-496e-a831-569e938aa820-16666359826ea43407-1"
       ],
       "settings": {
-        "db_image_with_text_image": "shopify:\/\/shop_images\/IMG-5652.jpg"
+        "db_image_with_text_image": "shopify://shop_images/IMG-5652.jpg"
       }
     },
     "6aefa938-045b-4128-9fce-d196257c61b9": {

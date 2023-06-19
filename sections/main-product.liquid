@@ -3,7 +3,7 @@
 </div>
 
 <script>
-  console.log( {{ product  | json }} );
+  console.log( {{ product | json }} );
 </script>
 
 <section
@@ -344,31 +344,38 @@
                 </a>
               </div>
             {%- when 'price' -%}
-              <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                {%- render 'price',
-                  product: product,
-                  use_variant: true,
-                  show_badges: true,
-                  price_class: 'price--large'
-                -%}
-              </div>
-              {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-                <div class="product__tax caption rte">
-                  {%- if shop.taxes_included -%}
-                    {{ 'products.product.include_taxes' | t }}
-                  {%- endif -%}
-                  {%- if shop.shipping_policy.body != blank -%}
-                    {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                  {%- endif -%}
+              {% if product.metafields.custom.price_note %}
+                <div class="product__price-note caption rte">
+                  {{ product.metafields.custom.price_note }}
                 </div>
-              {%- endif -%}
-              <div {{ block.shopify_attributes }}>
-                {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
-                {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
-                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                  {{ form | payment_terms }}
-                {%- endform -%}
-              </div>
+              {% endif %}
+              {%- unless product.metafields.custom.hide_price -%}
+                <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+                  {%- render 'price',
+                    product: product,
+                    use_variant: true,
+                    show_badges: true,
+                    price_class: 'price--large'
+                  -%}
+                </div>
+                {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+                  <div class="product__tax caption rte">
+                    {%- if shop.taxes_included -%}
+                      {{ 'products.product.include_taxes' | t }}
+                    {%- endif -%}
+                    {%- if shop.shipping_policy.body != blank -%}
+                      {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+                <div {{ block.shopify_attributes }}>
+                  {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+                  {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                    {{ form | payment_terms }}
+                  {%- endform -%}
+                </div>
+              {%- endunless -%}
             {%- when 'description' -%}
               {%- if product.description != blank -%}
                 <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
@@ -614,8 +621,7 @@
                     <span class="product-form__error-message"></span>
                   </div>
 
-                  {%- if product.type contains "commission" -%}
-                  {%- else -%}
+                  {%- unless product.metafields.custom.hide_price or product.metafields.custom.no_cart -%}
                     {%- form 'product',
                       product,
                       id: product_form_id,
@@ -663,16 +669,18 @@
                         {%- endif -%}
                       </div>
                     {%- endform -%}
-                    {%- if product.type contains "Bespoke"  -%}
-                      <button
-                        type="button"
-                        name="enquire"
-                        id="productEnquireButton"  
-                        class="product-enquiry__toggle product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
-                      >Enquire</button>
-                    {%- endif -%}
+                  {%- endunless -%}
+                  {%- if product.metafields.custom.enquire_button -%}
+                    <button
+                      type="button"
+                      name="enquire"
+                      id="productEnquireButton"  
+                      class="product-enquiry__toggle product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+                    >
+                      Enquire
+                    </button>
                   {%- endif -%}
-                </product-form>        
+                </product-form>     
 
                 {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
@@ -1300,7 +1308,8 @@
     }
   </script>
 </section>
-{%- if product.type contains "Bespoke" -%}
+
+{%- if product.metafields.custom.enquire_button -%}
   {% render 'db-product-enquiry', product: product %}
 {%- endif %}
 
@@ -2156,7 +2165,7 @@
           "id": "image_1",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.image_1.label"
         },
-       {
+        {
           "type": "text",
           "id": "heading_1",
           "default": "Heading",
@@ -2352,7 +2361,7 @@
           "id": "image_2",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.image_2.label"
         },
-          {
+        {
           "type": "text",
           "id": "heading_2",
           "default": "Heading",
